@@ -7,7 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Category.create!(name: 'Rings')
-Category.create!(name: 'bangles')
-Category.create!(name: 'Bracelates')
-Category.create!(name: 'EarRings')
+categories = [
+    { name: 'Rings' },
+    { name: 'Bangles' },
+    { name: 'Bracelats' },
+    { name: 'EarRings'}
+]
+
+Category.create(categories)
