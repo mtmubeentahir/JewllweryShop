@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @sale.date %>
+</p>
+
+<p>
+  <strong>Total bill:</strong>
+  <%= @sale.total_bill %>
+</p>
+
+<p>
+  <strong>Total discount:</strong>
+  <%= @sale.total_discount %>
+</p>
+
+<p>
+  <strong>Total products:</strong>
+  <%= @sale.total_products %>
+</p>
+
+<p>
+  <strong>Additional charges:</strong>
+  <%= @sale.additional_charges %>
+</p>
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>
